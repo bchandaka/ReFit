@@ -11,8 +11,8 @@ import torch
 from torch.utils.data import DataLoader
 
 from lib.datasets.base_dataset import BaseDataset
-from lib.utils.rotation_conversions import axis_angle_to_matrix
-from lib.utils.pose_utils import Evaluator
+from lib.refit_utils.rotation_conversions import axis_angle_to_matrix
+from lib.refit_utils.pose_utils import Evaluator
 
 from lib.core import constants
 from lib.core.config import parse_args

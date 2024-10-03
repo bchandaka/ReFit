@@ -11,8 +11,8 @@ from torch.utils.data import DataLoader
 from lib import get_model
 from lib.core.config import parse_args
 from lib.datasets.mv_dataset import MVDataset, MV_Sampler
-from lib.utils.pose_utils import Evaluator
-from lib.utils.geometry import avg_rot
+from lib.refit_utils.pose_utils import Evaluator
+from lib.refit_utils.geometry import avg_rot
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--pred_avg', action='store_true', help='prediction averaging across multiviews')

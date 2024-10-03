@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
         camera_data[key] = np.array([cam_data[key] for cam_data in individual_cam_data])
     # camera_data = np.load('/home/bchan/projects/imu_human/ReFit/data/examples/multiview_examples/multiview_examples.npz')
-
+    print(camera_data)
     # multiview examples
     db = custom_dataset(img_paths, all_boxes, camera_data, is_train=False, use_augmentation=False, 
                      normalization=True, cropped=False, crop_size=256)

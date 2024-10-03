@@ -10,7 +10,7 @@ from os.path import join
 import tqdm
 from tqdm import tqdm
 
-from lib.utils import rotation_conversions as geo
+from lib.refit_utils import rotation_conversions as geo
 from lib.models.smpl import SMPL
 from .agora import load_agora_smpl
 from .agora_projection import *

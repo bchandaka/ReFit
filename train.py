@@ -9,7 +9,7 @@ from torch.utils.tensorboard import SummaryWriter
 
 from lib.core.config import parse_args
 from lib.core.losses import compile_criterion
-from lib.utils.utils import prepare_output_dir, create_logger
+from lib.refit_utils.utils import prepare_output_dir, create_logger
 
 from lib import get_model, get_dataloaders
 from lib.trainer import Trainer

@@ -9,9 +9,9 @@ import logging
 
 from data_config import JOINT_REGRESSOR_H36M, PASCAL_OCCLUDERS
 from lib.core import constants, config
-from lib.utils.imutils import crop, flip_img, flip_pose, flip_kp, transform, rot_aa
-from lib.utils import rotation_conversions as geo
-from lib.utils.geometry import perspective_projection, estimate_translation
+from lib.refit_utils.imutils import crop, flip_img, flip_pose, flip_kp, transform, rot_aa
+from lib.refit_utils import rotation_conversions as geo
+from lib.refit_utils.geometry import perspective_projection, estimate_translation
 
 from .coco_occlusion import occlude_with_pascal_objects
 from lib.models.smpl import SMPL

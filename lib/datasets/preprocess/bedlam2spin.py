@@ -10,9 +10,9 @@ from os.path import join
 from tqdm import tqdm
 from glob import glob
 
-from lib.utils import rotation_conversions as geo
+from lib.refit_utils import rotation_conversions as geo
 from lib.models.smpl import SMPL
-from lib.utils.geometry import perspective_projection
+from lib.refit_utils.geometry import perspective_projection
 
 
 

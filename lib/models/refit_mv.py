@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from lib.utils.geometry import avg_rot, perspective_projection, rot6d_to_rotmat, rotmat_to_rot6d
+from lib.refit_utils.geometry import avg_rot, perspective_projection, rot6d_to_rotmat, rotmat_to_rot6d
 from .refit import REFIT
 
 

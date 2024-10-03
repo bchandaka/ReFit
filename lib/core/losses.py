@@ -1,8 +1,8 @@
 import torch
 import torch.nn.functional as F
 
-from lib.utils.geometry import batch_rodrigues
-from lib.utils import rotation_conversions as geo
+from lib.refit_utils.geometry import batch_rodrigues
+from lib.refit_utils import rotation_conversions as geo
 
 def compute_l2_loss(batch):
     x2 = batch["x2"]

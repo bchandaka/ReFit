@@ -3,9 +3,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from lib.utils.imutils import flip_pose
-from lib.utils import rotation_conversions as geo
-from lib.utils.geometry import perspective_projection, rot6d_to_rotmat, rotmat_to_rot6d, avg_rot
+from lib.refit_utils.imutils import flip_pose
+from lib.refit_utils import rotation_conversions as geo
+from lib.refit_utils.geometry import perspective_projection, rot6d_to_rotmat, rotmat_to_rot6d, avg_rot
 
 from .hrnet_refit import hrnet_w32, hrnet_w48
 from .utils import bilinear_sampler

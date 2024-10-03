@@ -2,7 +2,7 @@ import torch
 import logging
 from tqdm import tqdm
 from lib.core.base_trainer import BaseTrainer
-from lib.utils.pose_utils import Evaluator
+from lib.refit_utils.pose_utils import Evaluator
 
 logger = logging.getLogger(__name__)
 

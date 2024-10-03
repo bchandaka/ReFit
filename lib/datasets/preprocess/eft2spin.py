@@ -11,7 +11,7 @@ import numpy as np
 import torch
 import cv2
 
-from ...utils import rotation_conversions as geo
+from ...refit_utils import rotation_conversions as geo
 
 
 EFT2NPZ = {'COCO2014-All': 'coco_2014_eft.npz',

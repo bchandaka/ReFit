@@ -6,7 +6,7 @@ import cv2
 from os.path import join
 
 from lib.core import constants, config
-from lib.utils.imutils import crop, boxes_2_cs
+from lib.refit_utils.imutils import crop, boxes_2_cs
 
 
 class DetectDataset(Dataset):

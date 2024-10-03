@@ -9,14 +9,14 @@ import logging
 
 from data_config import JOINT_REGRESSOR_H36M, PASCAL_OCCLUDERS
 from lib.core import constants, config
-from lib.utils.imutils import crop, flip_img, flip_pose, flip_kp, transform, rot_aa
-from lib.utils import rotation_conversions as geo
-from lib.utils.geometry import perspective_projection, estimate_translation
+from lib.refit_utils.imutils import crop, flip_img, flip_pose, flip_kp, transform, rot_aa
+from lib.refit_utils import rotation_conversions as geo
+from lib.refit_utils.geometry import perspective_projection, estimate_translation
 
 from .coco_occlusion import occlude_with_pascal_objects
 from lib.models.smpl import SMPL
 from time import time
-from lib.utils.imutils import crop, boxes_2_cs
+from lib.refit_utils.imutils import crop, boxes_2_cs
 import os
 
 smpl = SMPL()
@@ -85,7 +85,7 @@ class custom_dataset(Dataset):
             self.img_focal = self.data['img_focal']
             self.img_center = self.data['img_center']
             self.has_camcalib = True
-            print(dataset, 'has camera intrinsics')
+            # print(dataset, 'has camera intrinsics')
         except KeyError:
             self.has_camcalib = False
 
@@ -95,7 +95,7 @@ class custom_dataset(Dataset):
             self.cam_t = self.data['cam_t']
             self.trans = self.data['trans']*0
             self.has_extrinsic = True
-            print(dataset, 'has camera extrinsic')
+            # print(dataset, 'has camera extrinsic')
         except KeyError:
             self.has_extrinsic = False
         
